@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(42, 42, 42);
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+.final-format {
+    color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(32, 32, 32);
+}
+
+input,
+textarea {
+    border: none;
+    margin: 0.3rem;
+    padding: 0.4rem;
+}
+
+textarea {
+    max-width: 100%;
+    min-height: 120px;
+}
+
+pre {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.team-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-div {
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.final-format {
+    margin: 0 auto;
+}
