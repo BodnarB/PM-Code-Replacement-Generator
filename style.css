@@ -6,7 +6,8 @@ body {
 }
 
 h1,
-.final-format {
+.final-format,
+label {
     color: whitesmoke;
 }
 
@@ -28,7 +29,7 @@ textarea {
     min-height: 120px;
 }
 
-pre {
+pre, label {
     display: block;
     width: fit-content;
     margin: 0 auto;
