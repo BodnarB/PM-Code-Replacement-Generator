@@ -14,7 +14,6 @@ function formatName(name) {
 function generateCodes() {
     let output = ""
 
-    // Itt vesszük ki az éppen beírt előtagokat (pl: mtk vagy ute)
     const hPre = homePrefix.value.trim()
     const gPre = guestPrefix.value.trim()
 
@@ -29,7 +28,8 @@ function processLines(text, prefix) {
     let result = ""
 
     lines.forEach(line => {
-        const match = line.match(/^\s*(\d+)[ \-\t\.]*(.*)/)
+        const match = line.match(/^\s*(\d+)[\s.\–\-\—\t]*(.*)/)
+
         if (match) {
             const number = match[1]
             const rawName = match[2].trim()
