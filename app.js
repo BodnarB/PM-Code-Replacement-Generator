@@ -32,26 +32,6 @@ function generateCodes() {
     finalFormat.innerHTML = `<pre>${output}</pre>`
 }
 
-// function processLines(text, prefix) {
-//     const lines = text.split('\n')
-//     let result = ""
-
-//     lines.forEach(line => {
-//         const match = line.match(/^\s*(\d+)[\s.\–\-\—\t]*(.*)/)
-
-//         if (match) {
-//             const number = match[1]
-//             const rawName = match[2].trim()
-//             if (rawName) {
-//                 const cleanName = formatName(rawName)
-//                 result += `${prefix}${number}\t${cleanName}\n`
-//             }
-//         }
-//     })
-//     return result
-// }
-
-
 function processLines(text, prefix) {
     const lines = text.split('\n')
     let result = ""
@@ -74,7 +54,6 @@ function processLines(text, prefix) {
     return result
 }
 
-// Add hozzá a checkboxot is a figyelendő elemek listájához
 [homeTeam, guestTeam, homePrefix, guestPrefix, formatCheckbox].forEach(el => {
     el.addEventListener('input', generateCodes)
 })
